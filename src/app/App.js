@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import logo from './ass/img/the-night-of.jpg';
+import logo from '../ass/img/the-night-of.jpg';
 import Button from './components/Button.js';
-import './App.css';
+import './styles/App.css';
 
 class App extends Component {
   render() {
