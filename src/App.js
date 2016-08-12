@@ -12,7 +12,7 @@ class App extends Component {
           <h2>Welcome to React</h2>
         </div>
 
-        <Button className="intro-btn btn btn-primary" btnCopy="Check Out Top 10 Threads" />
+        <Button className="intro-btn btn btn-primary" btnCopy="Check Out Top 10 Threads" onClick={console.log('foobar')} />
       </div>
     );
   }

@@ -19,6 +19,8 @@ const Button = props => {
 
 export default Button;
 
+// PropType validation
 Button.propTypes = {
-  copy: PropTypes.string,
+  btnCopy: PropTypes.string,
+  className: PropTypes.string
 };
