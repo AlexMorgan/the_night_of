@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import logo from '../../ass/img/the-night-of.jpg';
 
 const Nav = () => {

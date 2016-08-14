@@ -1,18 +1,30 @@
-import React, { Component } from 'react';
-import { Router, Route, Link, hashHistory } from 'react-router'
-import Nav from './components/Nav.js';
+import React from 'react';
+import { Router, Route, browserHistory,IndexRoute } from 'react-router'
 import Main from './components/Main.js';
-import Button from './components/Button.js';
+import Home from './components/Home.js';
+// import ResultsContainer from './containers/ResultsContainer.js';
 import './styles/App.css';
 
-class App extends Component {
-  render() {
-    return (
-        <Main>
-          <Button className="intro-btn btn btn-primary" btnCopy="Check Out Top 10 Threads" onClick={console.log('foobar')} />
-        </Main>
-    );
-  }
-}
+var routes = (
+     <Router history={browserHistory}>
+        <Route path="/" component={Main}>
+            <IndexRoute component={Home} />
+            // <Route path="/results" component={ResultsContainer} />
+        </Route>
+    </Router>
+)
 
-export default App;
+
+// class App extends Component {
+//   render() {
+//     return (
+//         <Main>
+//           <Button className="intro-btn btn btn-primary" btnCopy="Check Out Top 10 Threads" />
+//         </Main>
+//     );
+//   }
+// }
+
+// export default App;
+
+export default routes;
